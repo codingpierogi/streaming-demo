@@ -3,6 +3,7 @@ module github.com/codingpierogi/streaming-demo
 go 1.22.0
 
 require (
+	github.com/confluentinc/confluent-kafka-go v1.9.2 // indirect
 	github.com/elastic/go-sysinfo v1.15.0 // indirect
 	github.com/elastic/go-windows v1.0.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect

@@ -5,7 +5,9 @@ import (
 )
 
 type Config struct {
-	IntervalMs int `mapstructure:"INTERVAL_MS"`
+	IntervalMs       int    `mapstructure:"INTERVAL_MS"`
+	BootstrapServers string `mapstructure:"BOOTSTRAP_SERVERS"`
+	Topic            string `mapstructure:"TOPIC"`
 }
 
 func LoadConfig(path string) (config Config, err error) {
