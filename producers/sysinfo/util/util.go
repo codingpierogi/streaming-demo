@@ -11,7 +11,7 @@ func SerializeMessage(sim types.SysInfoMessage) ([]byte, error) {
 	serialized, err := json.Marshal(sim)
 
 	if err != nil {
-		return nil, fmt.Errorf("Failed to serialize message: %w", err)
+		return nil, fmt.Errorf("failed to serialize message: %w", err)
 	}
 
 	return serialized, nil
