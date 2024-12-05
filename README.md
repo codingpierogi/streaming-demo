@@ -22,4 +22,7 @@ docker run -p 9092:9092 apache/kafka:3.9.0
 go run producers/notify/notify.go
 
 curl --location 'http://localhost:3000/notify' --form 'message="Hello World!"'
+
+GROUP_ID=notify-consumer-group-1 go run consumers/notify/notify.go
+GROUP_ID=notify-consumer-group-2 go run consumers/notify/notify.go
 ```
